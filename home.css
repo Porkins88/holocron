@@ -1,0 +1,115 @@
+/*Main Body stuff*/
+*{
+	margin:0;
+	padding: 0;
+}
+body, html{
+	background-color: black;
+}
+/*Top Horizontal Bar*/
+#white{
+	position: fixed;
+	background-color: white;
+	color: white;
+	width: 100%;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	
+}
+/*outputDiv styling*/
+#outputDiv{
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 15pt;
+	margin: 20px;
+	
+}
+/*NAV BAR stuff*/
+.menuBar{
+	text-align: center;
+}
+.menuBar li{
+	display: inline-block;
+	padding: 5px;
+	position: relative;
+}
+.menuBar a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 3px;
+	font-family: Open Sans, serif;
+}
+
+.menuBar a:hover{
+	color: #aaa;
+}
+/*FLYING TEXT*/
+.flyText{
+	list-style: none;
+	position: fixed;
+	left: 80%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	max-width: auto;
+	margin: 0;
+	padding: 0;
+}
+.flyText li{
+	display: inline-block;
+	font-family: Open Sans, Arial;
+	font-weight: 300;
+	font-size: 4em;
+	padding: 15px;
+	color: white;
+	opacity: 1;
+	transition: all 2.5s ease;
+}
+.flyText li:last-child {
+	margin-right: 0;
+}
+.flyText.hidden li{
+	opacity: 0;
+}
+.flyText.hidden li:nth-child(1){ transform: translateX(-300px) translateY(-200px); }
+.flyText.hidden li:nth-child(2){ transform: translateX(-200px) translateY(250px); }
+.flyText.hidden li:nth-child(3){ transform: translateX(100px) translateY(250px); }
+.flyText.hidden li:nth-child(4){ transform: translateX(-150px) translateY(-200px); }
+.flyText.hidden li:nth-child(5){ transform: translateX(180px) translateY(-200px); }
+.flyText.hidden li:nth-child(6){ transform: translateX(-300px) translateY(-200px); }
+.flyText.hidden li:nth-child(7){ transform: translateX(-200px) translateY(250px); }
+.flyText.hidden li:nth-child(8){ transform: translateX(100px) translateY(250px); }
+/*Bottom Horizontal Bar*/
+#white2{
+	position: fixed;
+	background-color: white;
+	color: white;
+	width: 100%;
+	max-width: auto;
+	bottom: 10%;
+}
+/*Contact Info*/
+footer a{
+	position: fixed;
+	text-decoration: none;
+	color: white;
+	bottom: 5%;
+	left: 46%;
+}
+footer a:hover{
+	color: #aaa;
+}
+/*Main Homepage image*/
+#bgImg{
+	position: fixed;
+	z-index: -1000;
+}
+/*SHELL PAGE IMAGE*/
+#holoImg{
+	position: absolute;
+	left: 35%;
+	top: 10%;
+}
